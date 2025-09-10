@@ -3,29 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title - InnoMax.Space</title>
+    <title>Videos - InnoMax.Space</title>
     <link rel="stylesheet" href="css/style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <!-- Same header as index.html -->
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">InnoMax.Space</a></h1>
+                <p>Learn, Share & Earn</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="videos.html" class="active">Videos</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
     <main class="container">
         <div class="page-header">
-            <h1>Page Title</h1>
-            <p>Page description</p>
+            <h1>Video Tutorials</h1>
+            <p>Learn through our collection of video tutorials and guides</p>
         </div>
 
-        <!-- Page-specific content goes here -->
-
-        <!-- Ad Space -->
         <div class="ad-container">
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
-                 data-ad-slot="PAGE_TOP"
+                 data-ad-slot="VIDEOS_TOP"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="video-categories">
+            <h2>Categories</h2>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All Videos</button>
+                <button class="category-btn" data-category="web-development">Web Development</button>
+                <button class="category-btn" data-category="design">Design</button>
+                <button class="category-btn" data-category="marketing">Marketing</button>
+            </div>
+        </div>
+
+        <div class="videos-grid">
+            <div class="video-item" data-category="web-development">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>HTML & CSS Crash Course</h3>
+                    <p>Learn the basics of web development in this comprehensive tutorial</p>
+                    <div class="video-meta">
+                        <span class="video-duration">25:18</span>
+                        <span class="video-views">12K views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item" data-category="design">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Figma UI Design Tutorial</h3>
+                    <p>Create beautiful interfaces with Figma - from beginner to advanced</p>
+                    <div class="video-meta">
+                        <span class="video-duration">42:05</span>
+                        <span class="video-views">8.5K views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item" data-category="marketing">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>SEO for Beginners</h3>
+                    <p>Learn how to optimize your website for search engines</p>
+                    <div class="video-meta">
+                        <span class="video-duration">18:32</span>
+                        <span class="video-views">15K views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item" data-category="web-development">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>JavaScript Fundamentals</h3>
+                    <p>Master the core concepts of JavaScript programming</p>
+                    <div class="video-meta">
+                        <span class="video-duration">35:47</span>
+                        <span class="video-views">20K views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item" data-category="design">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Adobe Photoshop for Web Design</h3>
+                    <p>Create stunning web layouts using Photoshop</p>
+                    <div class="video-meta">
+                        <span class="video-duration">29:15</span>
+                        <span class="video-views">7.2K views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item" data-category="marketing">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_6" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Social Media Marketing Strategies</h3>
+                    <p>Grow your audience and engagement on social media</p>
+                    <div class="video-meta">
+                        <span class="video-duration">22:40</span>
+                        <span class="video-views">11K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="VIDEOS_BOTTOM"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -35,7 +161,41 @@
     </main>
 
     <footer>
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>InnoMax.Space</h3>
+                    <p>Sharing knowledge and helping you build passive income streams through quality content.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 InnoMax.Space. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>

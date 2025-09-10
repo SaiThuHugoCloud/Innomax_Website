@@ -3,29 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title - InnoMax.Space</title>
+    <title>Gallery - InnoMax.Space</title>
     <link rel="stylesheet" href="css/style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <!-- Same header as index.html -->
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">InnoMax.Space</a></h1>
+                <p>Learn, Share & Earn</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
     <main class="container">
         <div class="page-header">
-            <h1>Page Title</h1>
-            <p>Page description</p>
+            <h1>Image Gallery</h1>
+            <p>Visual resources and inspiration for your projects</p>
         </div>
 
-        <!-- Page-specific content goes here -->
-
-        <!-- Ad Space -->
         <div class="ad-container">
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
-                 data-ad-slot="PAGE_TOP"
+                 data-ad-slot="GALLERY_TOP"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web-design">Web Design</button>
+            <button class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+            <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="web-design">
+                <img src="images/gallery/web-design-1.jpg" alt="Web Design Example 1" data-full="images/gallery/web-design-1-full.jpg">
+                <div class="gallery-overlay">
+                    <h3>Modern Portfolio Website</h3>
+                    <p>Clean and responsive design</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="graphic-design">
+                <img src="images/gallery/graphic-design-1.jpg" alt="Graphic Design Example 1" data-full="images/gallery/graphic-design-1-full.jpg">
+                <div class="gallery-overlay">
+                    <h3>Brand Identity Design</h3>
+                    <p>Logo and branding materials</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="ui-ux">
+                <img src="images/gallery/ui-ux-1.jpg" alt="UI/UX Design Example 1" data-full="images/gallery/ui-ux-1-full.jpg">
+                <div class="gallery-overlay">
+                    <h3>Mobile App Interface</h3>
+                    <p>User-friendly app design</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="web-design">
+                <img src="images/gallery/web-design-2.jpg" alt="Web Design Example 2" data-full="images/gallery/web-design-2-full.jpg">
+                <div class="gallery-overlay">
+                    <h3>E-commerce Website</h3>
+                    <p>Online store design</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="graphic-design">
+                <img src="images/gallery/graphic-design-2.jpg" alt="Graphic Design Example 2" data-full="images/gallery/graphic-design-2-full.jpg">
+                <div class="gallery-overlay">
+                    <h3>Marketing Materials</h3>
+                    <p>Brochures and flyers</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="ui-ux">
+                <img src="images/gallery/ui-ux-2.jpg" alt="UI/UX Design Example 2" data-full="images/gallery/ui-ux-2-full.jpg">
+                <div class="gallery-overlay">
+                    <h3>Dashboard Design</h3>
+                    <p>Data visualization interface</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="GALLERY_BOTTOM"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -35,7 +117,41 @@
     </main>
 
     <footer>
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>InnoMax.Space</h3>
+                    <p>Sharing knowledge and helping you build passive income streams through quality content.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 InnoMax.Space. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
