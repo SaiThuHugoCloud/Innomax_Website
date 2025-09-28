@@ -1,52 +1,36 @@
-// 90-Day English Mastery Program - Enhanced Version
+// 90-Day English Mastery Program - Working Version
 document.addEventListener('DOMContentLoaded', function() {
-    // Sample data structure for 90 days
+    // Sample data for Day 1 - Morning Session (for testing)
     const learningData = {
-        // Day 1
         1: {
             morning: {
                 vocabulary: [
                     { word: "Hello", phonetic: "/həˈloʊ/", pos: "interjection", meaning: "မင်္ဂလာပါ", explanation: "A greeting used when meeting someone", example: "Hello, how are you today?", exampleBurmese: "မင်္ဂလာပါ၊ ဒီနေ့ ဘယ်လိုနေလဲ?" },
                     { word: "Goodbye", phonetic: "/ɡʊdˈbaɪ/", pos: "interjection", meaning: "သွားတော့မယ်", explanation: "A farewell used when leaving", example: "Goodbye, see you tomorrow!", exampleBurmese: "သွားတော့မယ်၊ မနက်ဖြန် တွေ့မယ်!" },
-                    // ... 8 more vocabulary words
+                    { word: "Thank you", phonetic: "/ˈθæŋk juː/", pos: "interjection", meaning: "ကျေးဇူးတင်ပါတယ်", explanation: "Expression of gratitude", example: "Thank you for your help.", exampleBurmese: "ကျေးဇူးတင်ပါတယ်။" },
+                    { word: "Please", phonetic: "/pliːz/", pos: "interjection", meaning: "ကျေးဇူးပြု၍", explanation: "Polite expression for requests", example: "Please come in.", exampleBurmese: "ကျေးဇူးပြု၍ ဝင်ပါ။" },
+                    { word: "Yes", phonetic: "/jes/", pos: "adverb", meaning: "ဟုတ်ကဲ့", explanation: "Affirmative response", example: "Yes, I understand.", exampleBurmese: "ဟုတ်ကဲ့၊ နားလည်ပါတယ်။" },
+                    { word: "No", phonetic: "/noʊ/", pos: "adverb", meaning: "မဟုတ်ပါ", explanation: "Negative response", example: "No, thank you.", exampleBurmese: "မဟုတ်ပါ၊ ကျေးဇူးတင်ပါတယ်။" },
+                    { word: "Water", phonetic: "/ˈwɔːtər/", pos: "noun", meaning: "ရေ", explanation: "Clear liquid essential for life", example: "I drink water every day.", exampleBurmese: "ကျွန်တော် နေ့တိုင်း ရေသောက်တယ်။" },
+                    { word: "Food", phonetic: "/fuːd/", pos: "noun", meaning: "အစားအစာ", explanation: "What people and animals eat", example: "The food is delicious.", exampleBurmese: "အစားအစာက အင်မတန်မွှေးပါတယ်။" },
+                    { word: "House", phonetic: "/haʊs/", pos: "noun", meaning: "အိမ်", explanation: "Building where people live", example: "My house is near the school.", exampleBurmese: "ကျွန်တော့်အိမ်က ကျောင်းနားမှာပါ။" },
+                    { word: "Family", phonetic: "/ˈfæməli/", pos: "noun", meaning: "မိသားစု", explanation: "Group of related people", example: "I love my family.", exampleBurmese: "ကျွန်တော် ကျွန်တော့်မိသားစုကို ချစ်တယ်။" }
                 ],
                 phrasalVerbs: [
                     { word: "Look up", phonetic: "/lʊk ʌp/", meaning: "ရှာဖွေသည်", explanation: "To search for information", example: "I need to look up that word in the dictionary.", exampleBurmese: "ကျွန်တော် အဲဒီစကားလုံးကို အဘိဓာန်ထဲမှာ ရှာဖွေဖို့လိုတယ်။" },
-                    // ... 2 more phrasal verbs
+                    { word: "Give up", phonetic: "/ɡɪv ʌp/", meaning: "စွန့်လွှတ်သည်", explanation: "To stop trying", example: "Don't give up on your dreams.", exampleBurmese: "မင်းရဲ့ အိပ်မက်တွေကို မစွန့်လွှတ်နဲ့။" },
+                    { word: "Take off", phonetic: "/teɪk ɒf/", meaning: "ပျံသန်းသည်/ချွတ်သည်", explanation: "To leave the ground (plane) or remove", example: "The plane will take off in 10 minutes.", exampleBurmese: "လေယာဉ်က ၁၀ မိနစ်အတွင်း ပျံသန်းမယ်။" }
                 ],
                 idioms: [
                     { word: "Break a leg", phonetic: "/breɪk ə leɡ/", meaning: "ကံကောင်းပါစေ", explanation: "Good luck (especially for performers)", example: "Break a leg in your performance tonight!", exampleBurmese: "ဒီည မင်းရဲ့ဖျော်ဖြေပွဲမှာ ကံကောင်းပါစေကွာ!" },
-                    // ... 2 more idioms
-                ]
-            },
-            afternoon: {
-                vocabulary: [
-                    // 10 vocabulary words
-                ],
-                phrasalVerbs: [
-                    // 4 phrasal verbs
-                ],
-                idioms: [
-                    // 4 idioms
-                ]
-            },
-            evening: {
-                vocabulary: [
-                    // 10 vocabulary words
-                ],
-                phrasalVerbs: [
-                    // 3 phrasal verbs
-                ],
-                idioms: [
-                    // 3 idioms
+                    { word: "Piece of cake", phonetic: "/piːs əv keɪk/", meaning: "အလွန်လွယ်ကူသည်", explanation: "Very easy", example: "The exam was a piece of cake.", exampleBurmese: "စာမေးပွဲက အရမ်းလွယ်တယ်။" },
+                    { word: "Hit the books", phonetic: "/hɪt ðə bʊks/", meaning: "စာကြည့်သည်", explanation: "To study hard", example: "I need to hit the books for my final exams.", exampleBurmese: "ကျွန်တော် နောက်ဆုံးစာမေးပွဲအတွက် စာကြည့်ဖို့လိုတယ်။" }
                 ]
             }
         }
-        // Continue for days 2-90...
     };
 
     // DOM Elements
-    const sessionCards = document.querySelectorAll('.session-card');
     const sessionBtns = document.querySelectorAll('.session-btn');
     const learningSession = document.getElementById('learningSession');
     const backToDashboard = document.getElementById('backToDashboard');
@@ -83,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize the app
     function init() {
+        console.log('Initializing Language Learning App...');
         setupEventListeners();
         loadUserProgress();
         updateDashboard();
@@ -90,10 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Set up event listeners
     function setupEventListeners() {
+        console.log('Setting up event listeners...');
+        
         // Session buttons
         sessionBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const session = e.target.dataset.session;
+                console.log('Starting session:', session);
                 startLearningSession(session);
             });
         });
@@ -112,12 +100,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Keyboard shortcuts
         document.addEventListener('keydown', handleKeyboardShortcuts);
+        
+        console.log('Event listeners setup completed');
     }
 
     // Start a learning session
     function startLearningSession(session) {
         currentSession = session;
         currentCardIndex = 0;
+        
+        console.log('Starting session:', session, 'for day:', currentDay);
         
         // Get session data
         const sessionData = learningData[currentDay]?.[session];
@@ -132,6 +124,8 @@ document.addEventListener('DOMContentLoaded', function() {
             ...sessionData.phrasalVerbs.map(card => ({ ...card, type: 'phrasal' })),
             ...sessionData.idioms.map(card => ({ ...card, type: 'idiom' }))
         ];
+
+        console.log('Total cards for session:', currentCards.length);
 
         // Update UI
         sessionTitle.textContent = `${capitalizeFirst(session)} Session - Day ${currentDay}`;
@@ -160,10 +154,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show current card
     function showCurrentCard() {
-        if (currentCards.length === 0) return;
+        if (currentCards.length === 0) {
+            console.error('No cards available');
+            return;
+        }
 
         const card = currentCards[currentCardIndex];
         const totalCards = currentCards.length;
+
+        console.log('Showing card:', currentCardIndex, card);
 
         // Update card content
         updateCardContent(card);
@@ -180,6 +179,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update card content
     function updateCardContent(card) {
+        if (!card) {
+            console.error('No card data available');
+            return;
+        }
+
+        console.log('Updating card content:', card);
+
         // Front of card
         document.getElementById('wordMain').textContent = card.word;
         document.getElementById('wordPhonetic').textContent = card.phonetic;
@@ -198,8 +204,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('cardTypeBack').textContent = cardType;
         
         // Update card number
-        document.getElementById('cardNumber').textContent = `${currentCardIndex + 1}/${currentCards.length}`;
-        document.getElementById('cardNumberBack').textContent = `${currentCardIndex + 1}/${currentCards.length}`;
+        const cardNumber = `${currentCardIndex + 1}/${currentCards.length}`;
+        document.getElementById('cardNumber').textContent = cardNumber;
+        document.getElementById('cardNumberBack').textContent = cardNumber;
         
         // Reset card to front
         mainFlashcard.classList.remove('flipped');
@@ -249,10 +256,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function pronounceWord() {
         const card = currentCards[currentCardIndex];
         if (card && card.word) {
-            const utterance = new SpeechSynthesisUtterance(card.word);
-            utterance.lang = 'en-US';
-            utterance.rate = 0.8;
-            speechSynthesis.speak(utterance);
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(card.word);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.8;
+                speechSynthesis.speak(utterance);
+            } else {
+                alert('Speech synthesis not supported in this browser');
+            }
         }
     }
 
@@ -273,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const dot = document.createElement('div');
             dot.className = 'nav-dot vocab';
             dot.dataset.index = i;
-            dot.addEventListener('click', () => navigateToCard(i, 'vocabulary'));
+            dot.addEventListener('click', () => navigateToCard(i));
             vocabDots.appendChild(dot);
         }
         
@@ -282,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const dot = document.createElement('div');
             dot.className = 'nav-dot phrasal';
             dot.dataset.index = i + sessionData.vocabulary.length;
-            dot.addEventListener('click', () => navigateToCard(dot.dataset.index, 'phrasal'));
+            dot.addEventListener('click', () => navigateToCard(dot.dataset.index));
             phrasalDots.appendChild(dot);
         }
         
@@ -291,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const dot = document.createElement('div');
             dot.className = 'nav-dot idiom';
             dot.dataset.index = i + sessionData.vocabulary.length + sessionData.phrasalVerbs.length;
-            dot.addEventListener('click', () => navigateToCard(dot.dataset.index, 'idiom'));
+            dot.addEventListener('click', () => navigateToCard(dot.dataset.index));
             idiomDots.appendChild(dot);
         }
     }
@@ -308,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Navigate to specific card
-    function navigateToCard(index, type) {
+    function navigateToCard(index) {
         currentCardIndex = parseInt(index);
         showCurrentCard();
     }
@@ -330,7 +341,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (timeLeft <= 0) {
                 stopSessionTimer();
-                // Auto-complete session or show reminder
+                alert('Time\'s up! Session completed.');
+                completeSession();
             }
         }, 1000);
     }
@@ -365,6 +377,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const savedProgress = localStorage.getItem('englishProgress');
         if (savedProgress) {
             userProgress = JSON.parse(savedProgress);
+            console.log('Loaded user progress:', userProgress);
+        } else {
+            console.log('No saved progress found');
         }
     }
 
@@ -390,8 +405,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const progressPercent = Math.round((completedSessions / totalSessions) * 100);
         const progressCircle = document.querySelector('.progress-circle');
-        progressCircle.style.background = `conic-gradient(var(--primary-color) ${progressPercent}%, #e9ecef ${progressPercent}%)`;
-        progressCircle.querySelector('.progress-text').textContent = `${progressPercent}%`;
+        if (progressCircle) {
+            progressCircle.style.background = `conic-gradient(var(--primary-color) ${progressPercent}%, #e9ecef ${progressPercent}%)`;
+            progressCircle.querySelector('.progress-text').textContent = `${progressPercent}%`;
+        }
     }
 
     // Update daily progress
@@ -400,10 +417,12 @@ document.addEventListener('DOMContentLoaded', function() {
         
         ['morning', 'afternoon', 'evening'].forEach(session => {
             const progressFill = document.querySelector(`.progress-fill[data-session="${session}"]`);
-            if (todayProgress[`${session}_completed`]) {
-                progressFill.style.width = '100%';
-            } else {
-                progressFill.style.width = '0%';
+            if (progressFill) {
+                if (todayProgress[`${session}_completed`]) {
+                    progressFill.style.width = '100%';
+                } else {
+                    progressFill.style.width = '0%';
+                }
             }
         });
     }
@@ -412,7 +431,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateStreak() {
         // Calculate current streak
         let streak = 0;
-        const today = new Date().toDateString();
         
         for (let day = 1; day <= 90; day++) {
             const dayData = userProgress[day];
@@ -423,7 +441,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        document.querySelector('.streak-count').textContent = streak;
+        const streakElement = document.querySelector('.streak-count');
+        if (streakElement) {
+            streakElement.textContent = streak;
+        }
     }
 
     // Keyboard shortcuts
@@ -436,6 +457,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'ArrowRight':
             case ' ':
+                if (e.key === ' ') e.preventDefault();
                 showNextCard();
                 break;
             case 'f':
