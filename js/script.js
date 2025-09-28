@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Form validation for contact page
+    // Form validation for contact page (Example implementation)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Subscribe form validation
+    // Subscribe form validation (Example implementation)
     const subscribeForms = document.querySelectorAll('.subscribe-form');
     subscribeForms.forEach(form => {
         form.addEventListener('submit', function(e) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Lazy loading for images
+    // Simple Lazy loading for images (using data-src attribute)
     if ('IntersectionObserver' in window) {
         const lazyImages = document.querySelectorAll('img[data-src]');
         
@@ -137,7 +137,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 80, // Adjust for header height
+                top: targetElement.offsetTop - 80, // Adjust for fixed header height
                 behavior: 'smooth'
             });
         }

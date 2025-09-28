@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>90-Day English Mastery - InnoMax.Space</title>
+    <title>InnoMax.Space - Knowledge Sharing Platform</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/language.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,10 +16,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="resources.html">Resources</a></li>
-                    <li><a href="language.html" class="active">Language Learning</a></li>
+                    <li><a href="language.html">Language Learning</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="videos.html">Videos</a></li>
                     <li><a href="about.html">About</a></li>
@@ -36,218 +35,78 @@
     </header>
 
     <main class="container">
-        <div class="page-header">
-            <h1>90-Day English Mastery Program</h1>
-            <p>Master 2,700 Vocabulary + 900 Phrasal Verbs + 900 Idioms in 3 months</p>
-            <div class="program-stats">
-                <div class="stat-card">
-                    <h3>2,700</h3>
-                    <p>Vocabulary Words</p>
-                </div>
-                <div class="stat-card">
-                    <h3>900</h3>
-                    <p>Phrasal Verbs</p>
-                </div>
-                <div class="stat-card">
-                    <h3>900</h3>
-                    <p>Idioms</p>
-                </div>
-                <div class="stat-card">
-                    <h3>90</h3>
-                    <p>Days</p>
-                </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Share Knowledge, Earn Passive Income</h2>
+                <p>Discover tutorials, documents, and resources on programming, design, and technology</p>
+                <a href="blog.html" class="btn">Explore Content</a>
             </div>
-        </div>
-
-        <!-- Program Overview -->
-        <section class="program-overview">
-            <h2>Daily Learning Structure</h2>
-            <div class="session-cards">
-                <div class="session-card morning">
-                    <div class="session-icon">🌅</div>
-                    <h3>Morning Session</h3>
-                    <div class="session-content">
-                        <p><strong>10 Vocabulary</strong> + <strong>3 Phrasal Verbs</strong> + <strong>3 Idioms</strong></p>
-                        <span class="duration">15-20 minutes</span>
-                    </div>
-                    <button class="session-btn" data-session="morning">Start Morning Session</button>
-                </div>
-                
-                <div class="session-card afternoon">
-                    <div class="session-icon">☀️</div>
-                    <h3>Afternoon Session</h3>
-                    <div class="session-content">
-                        <p><strong>10 Vocabulary</strong> + <strong>4 Phrasal Verbs</strong> + <strong>4 Idioms</strong></p>
-                        <span class="duration">20-25 minutes</span>
-                    </div>
-                    <button class="session-btn" data-session="afternoon">Start Afternoon Session</button>
-                </div>
-                
-                <div class="session-card evening">
-                    <div class="session-icon">🌙</div>
-                    <h3>Evening Session</h3>
-                    <div class="session-content">
-                        <p><strong>10 Vocabulary</strong> + <strong>3 Phrasal Verbs</strong> + <strong>3 Idioms</strong></p>
-                        <span class="duration">15-20 minutes</span>
-                    </div>
-                    <button class="session-btn" data-session="evening">Start Evening Session</button>
-                </div>
+            <div class="hero-image">
+                <img src="images/placeholder.jpg" alt="InnoMax Learning" id="hero-img">
             </div>
         </section>
 
-        <!-- Progress Dashboard -->
-        <section class="progress-dashboard">
-            <h2>Your Learning Journey</h2>
-            <div class="dashboard-cards">
-                <div class="dashboard-card">
-                    <h3>Overall Progress</h3>
-                    <div class="progress-circle" data-progress="0">
-                        <span class="progress-text">0%</span>
+        <section class="featured-posts">
+            <h2>Featured Content</h2>
+            <div class="post-grid">
+                <article class="post-card">
+                    <img src="images/post1-thumb.jpg" alt="Web Development">
+                    <div class="post-content">
+                        <h3><a href="blog.html#post1">Getting Started with Web Development</a></h3>
+                        <p>Learn the basics of HTML, CSS and JavaScript in this comprehensive guide for beginners.</p>
+                        <div class="post-meta">
+                            <span class="date">April 10, 2023</span>
+                            <span class="category">Web Development</span>
+                        </div>
                     </div>
-                    <p>4,500 items to master</p>
-                </div>
+                </article>
                 
-                <div class="dashboard-card">
-                    <h3>Today's Progress</h3>
-                    <div class="daily-progress-bars">
-                        <div class="progress-item">
-                            <span>Morning</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" data-session="morning"></div>
-                            </div>
-                        </div>
-                        <div class="progress-item">
-                            <span>Afternoon</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" data-session="afternoon"></div>
-                            </div>
-                        </div>
-                        <div class="progress-item">
-                            <span>Evening</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" data-session="evening"></div>
-                            </div>
+                <article class="post-card">
+                    <img src="images/placeholder.jpg" alt="Digital Marketing">
+                    <div class="post-content">
+                        <h3><a href="blog.html#post2">Digital Marketing Strategies for 2023</a></h3>
+                        <p>Discover the latest trends and effective strategies in digital marketing.</p>
+                        <div class="post-meta">
+                            <span class="date">April 5, 2023</span>
+                            <span class="category">Marketing</span>
                         </div>
                     </div>
-                </div>
+                </article>
                 
-                <div class="dashboard-card">
-                    <h3>Current Streak</h3>
-                    <div class="streak-display">
-                        <span class="streak-count">0</span>
-                        <span class="streak-label">days</span>
+                <article class="post-card">
+                    <img src="images/placeholder.jpg" alt="Passive Income">
+                    <div class="post-content">
+                        <h3><a href="blog.html#post3">Building Passive Income Streams Online</a></h3>
+                        <p>Learn how to create multiple streams of passive income through digital products.</p>
+                        <div class="post-meta">
+                            <span class="date">March 28, 2023</span>
+                            <span class="category">Finance</span>
+                        </div>
                     </div>
-                    <p>Keep going! 🔥</p>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- Learning Session (Hidden by default) -->
-        <section class="learning-session" id="learningSession" style="display: none;">
-            <div class="session-header">
-                <button class="back-btn" id="backToDashboard">← Back to Dashboard</button>
-                <h2 id="sessionTitle">Morning Session - Day 1</h2>
-                <div class="session-info">
-                    <span id="sessionProgress">1/16 items</span>
-                    <span id="sessionTimer">15:00</span>
-                </div>
-            </div>
-
-            <!-- Flashcard Container -->
-            <div class="flashcard-container">
-                <div class="flashcard" id="mainFlashcard">
-                    <div class="flashcard-front">
-                        <div class="card-header">
-                            <span class="card-type" id="cardType">Vocabulary</span>
-                            <span class="card-number" id="cardNumber">1/16</span>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="word-main" id="wordMain">Hello</h2>
-                            <div class="word-details">
-                                <span class="phonetic" id="wordPhonetic">/həˈloʊ/</span>
-                                <span class="part-of-speech" id="wordPOS">interjection</span>
-                            </div>
-                            <button class="flip-btn" id="flipBtn">Show Meaning</button>
-                        </div>
-                    </div>
-                    
-                    <div class="flashcard-back">
-                        <div class="card-header">
-                            <span class="card-type" id="cardTypeBack">Vocabulary</span>
-                            <span class="card-number" id="cardNumberBack">1/16</span>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="word-main" id="wordMainBack">Hello</h2>
-                            <div class="meaning-section">
-                                <h3>Meaning in Burmese</h3>
-                                <p class="burmese-meaning" id="burmeseMeaning">မင်္ဂလာပါ</p>
-                                <p class="explanation" id="wordExplanation">A greeting used when meeting someone</p>
-                            </div>
-                            <div class="example-section">
-                                <h3>Example</h3>
-                                <p class="english-example" id="englishExample">Hello, how are you today?</p>
-                                <p class="burmese-example" id="burmeseExample">မင်္ဂလာပါ၊ ဒီနေ့ ဘယ်လိုနေလဲ?</p>
-                            </div>
-                            <button class="flip-btn" id="flipBackBtn">Show Word</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Session Controls -->
-            <div class="session-controls">
-                <div class="control-buttons">
-                    <button class="control-btn" id="prevBtn" disabled>
-                        <span>← Previous</span>
-                    </button>
-                    
-                    <div class="main-controls">
-                        <button class="control-btn secondary" id="pronounceBtn">
-                            <span>🔊 Pronounce</span>
-                        </button>
-                        <button class="control-btn primary" id="knowBtn">
-                            <span>✓ I Know This</span>
-                        </button>
-                        <button class="control-btn secondary" id="practiceBtn">
-                            <span>🔄 Practice More</span>
-                        </button>
-                    </div>
-                    
-                    <button class="control-btn" id="nextBtn">
-                        <span>Next →</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Quick Navigation -->
-            <div class="quick-nav">
-                <div class="nav-section">
-                    <h4>Vocabulary (10)</h4>
-                    <div class="nav-dots" id="vocabDots"></div>
-                </div>
-                <div class="nav-section">
-                    <h4>Phrasal Verbs (<span id="phrasalCount">3</span>)</h4>
-                    <div class="nav-dots" id="phrasalDots"></div>
-                </div>
-                <div class="nav-section">
-                    <h4>Idioms (<span id="idiomCount">3</span>)</h4>
-                    <div class="nav-dots" id="idiomDots"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ad Space -->
         <div class="ad-container">
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
-                 data-ad-slot="LANGUAGE_TOP"
+                 data-ad-slot="HOME_TOP"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
+
+        <section class="cta-section">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Join our community of learners and creators today</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="resources.html" class="btn btn-secondary">Explore Resources</a>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -263,7 +122,6 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="resources.html">Resources</a></li>
-                        <li><a href="language.html">Language Learning</a></li>
                         <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
@@ -290,6 +148,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/language.js"></script>
 </body>
 </html>
